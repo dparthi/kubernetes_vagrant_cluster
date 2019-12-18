@@ -26,3 +26,7 @@ Follow the same steps for creating the worker base box
 
 Once the cluster is up, copy the kube config to your local context so that you can administer the cluster from your local box
 <pre>scp -r vagrant@192.168.50.10:/home/vagrant/.kube/config ~/.kube/config</pre>
+
+Inspirations, Notes and References (could help in troubleshooting)
+- https://kubernetes.io/blog/2019/03/15/kubernetes-setup-using-ansible-and-vagrant/
+- the ip address of the nodes are not getting reflected in the master node this needed the creation of the /etc/default/kubelet file with the node-ip address parameter as per the recommendation here: https://stackoverflow.com/questions/51154911/kubectl-exec-results-in-error-unable-to-upgrade-connection-pod-does-not-exi. Irrespective of the config directory, this needs to be done to get this to work.
