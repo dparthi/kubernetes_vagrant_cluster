@@ -3,7 +3,7 @@
 
 MASTER_IMAGE_NAME = "bionic_k8s_master"
 WORKER_IMAGE_NAME = "bionic_k8s_worker"
-NUMBER_OF_WORKERS = 6
+NUMBER_OF_WORKERS = 4
 
 Vagrant.configure("2") do |config|
     config.ssh.insert_key = false
