@@ -1,4 +1,6 @@
 .vagrant
 *.box
 to_be_removed
+applications
+
 
