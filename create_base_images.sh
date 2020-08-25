@@ -20,13 +20,13 @@ vagrant box remove bionic_k8s_worker
 cd $MY_CLUSTER_DIRECTORY/master_base/
 vagrant up
 vagrant package --base k8s-master-base
-vagrant box add bionic_k8s_master package_master.box
+vagrant box add bionic_k8s_master package.box
 vagrant destroy -f
 
 cd $MY_CLUSTER_DIRECTORY/worker_base/
 vagrant up
 vagrant package --base k8s-worker-base
-vagrant box add bionic_k8s_worker package_worker.box
+vagrant box add bionic_k8s_worker package.box
 vagrant destroy -f
 
 
